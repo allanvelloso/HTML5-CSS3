@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro Instituo Social</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados do Responsavel</legend>
+            
+            <p>
+                <label for="inome">Nome Completo: </label>
+                <input type="text" name="nome" id="inome" maxlength="30" autocomplete="name" placeholder=" Nome Completo" required>
+                
+            </p>
+            <p>
+                <label for="inascimento">Nascimento: </label>
+                <input type="date" name="" id="">
+            </p>
+            <p>
+                <label for="icpf">CPF: </label>
+                <input type="number" name="cpf" id="icpf" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder=" Somente Numeros" required>
+            </p>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail" placeholder=" E-mail" required>
+
+            </p>
+          <p>
+            <label for="itel">Telefone: </label>
+            <input type="tel" name="tel" id="itel" placeholder=" (99) 99999-9999" required>
+          </p>
+            
+                    <p>
+                        <input type="radio" name="sexo" id="imas"> <label for="imas">Masculino</label>
+                        <input type="radio" name="sexo" id="ifem"> <label for="ifem">Feminino</label>
+                    </p>
+            <p>
+                <label for="ifoto">Foto de perfil do responsável</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend> Dados do Aluno</legend>
+            <p>
+                <label for="inomea">Nome Completo: </label>
+                <input type="text" name="nome" id="inomea" maxlength="30" autocomplete="name" placeholder=" Nome Completo" required>
+                
+            </p>
+            <p>
+                <label for="inascimentoa">Nascimento: </label>
+                <input type="date" name="Nascimento" id="inascimentoa">
+            </p>
+            <p>
+                <label for="icpfa">CPF: </label>
+                <input type="number" name="cpfa" id="icpfa"  placeholder=" Somente Numeros" required>
+            </p>
+            <p>
+                <label for="iemaila">Email: </label>
+                <input type="email" name="emaila" id="iemaila" placeholder=" E-mail" required>
+
+            </p>
+          <p>
+            <label for="itela">Telefone: </label>
+            <input type="tel" name="tel" id="itela" placeholder=" (99) 99999-9999" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+          </p>
+
+           
+                <p>
+                    <input type="radio" name="sexo" id="imasa"> <label for="imasa">Masculino</label>
+                    <input type="radio" name="sexo" id="ifema"> <label for="ifema">Feminino</label>
+                </p>
+                <p>
+                    <label for="ifotoa">Foto para carteira de identificação.</label>
+                    <input type="file" name="fotoa" id="ifotoa">
+                </p>
+
+        </fieldset>
+    
+           <fieldset>
+
+            <legend>Projeto Social</legend>
+
+            <label for="ijudo"><input type="checkbox" name="judô" id="ijudo"> Judô</label><br>
+            <input type="checkbox" name="fut12" id="ifut12"> <label for="ifut12">Futebol 12 anos</label><br>
+            <input type="checkbox" name="fut15" id="ifut15"> <label for="ifut15">Futebol 15 anos</label><br>
+            <input type="checkbox" name="fut20" id="ifut20"> <label for="ifut20">Futebol 20 anos</label><br>
+            <input type="checkbox" name="danca" id="idanca"> <label for="idanca">Dança</label><br><br>
+
+            
+           </fieldset>
+
+      
+    </form>
+    <p>
+        <input type="button" value="Cadastrar"> <input type="reset" value="Limpar">
+      </p>
+</body>
+</html>
