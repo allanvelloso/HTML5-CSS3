@@ -5,35 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
-
-        body, html{
+        *{
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
         }
-        div.conteiner{
-            background-color: rgb(143, 60, 60);
-            display: flex;
-            flex-flow: row nowrap;
+        body{
+            background-color: antiquewhite;
+        }
+        main{
+            background-color: bisque;
+            width: 90vw;
+            height: 90vh;
+
+            display:flex;
+            flex-flow: row wrap;
             justify-content: center;
             align-items: center;
-            width: 100vw;
-            height: 100vh;
-            
-
         }
-        div.item{
-            background-color: rgb(37, 69, 80);
-            border: 1px solid black;
-            
-            
-        }
+        section{
+            background-color: rgb(112, 106, 98);
+            width: 200px;
+            height: 200px;
+            text-align: center;
+        }   
+        
     </style>
 </head>
 <body>
-    <div class="conteiner">
-        <div class="item">A</div>
-    </div>
+    <main>
+        <section>
+            <h1>Tela de Login</h1>
+        </section>
+    </main>
         
 
 </body>
